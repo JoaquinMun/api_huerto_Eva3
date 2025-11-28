@@ -23,7 +23,7 @@ npm install @nestjs/swagger swagger-ui-express
 # Para compilar y levantar el proyecto
 npm install --save-dev ts-node typescript @types/node
 
-OJO
+#OJO
 
 DB_TYPE=mysql
 DB_HOST=127.0.0.1
@@ -34,12 +34,11 @@ DB_NAME=huerto_db
 PORT=3000
 NODE_ENV=development
 
-Levantar el servidor
-Ejecuta:
+#Levantar el servidor Ejecuta:
 
 npm run start:dev
 
-Si todo está OK deberías ver:
+#Si todo está OK deberías ver:
 
 Aplicación corriendo en: http://localhost:3000
 Swagger UI: http://localhost:3000/docs
