@@ -14,6 +14,8 @@ import { Productos } from './productos/entities/producto.entity';
 import { Categorias } from './categorias/entities/categoria.entity';
 import { Ventas } from './ventas/entities/venta.entity';
 import { DetalleVenta } from './detalle-venta/entities/detalle-venta.entity';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -27,6 +29,7 @@ import { DetalleVenta } from './detalle-venta/entities/detalle-venta.entity';
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
       entities: [Usuarios, Productos, Categorias, Ventas, DetalleVenta],
+      dropSchema: process.env.NODE_ENV === 'test', 
       synchronize: true,
     }),
 
@@ -37,5 +40,7 @@ import { DetalleVenta } from './detalle-venta/entities/detalle-venta.entity';
     VentasModule,
     DetalleVentaModule,
   ],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
