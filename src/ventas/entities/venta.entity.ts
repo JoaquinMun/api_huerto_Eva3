@@ -1,4 +1,11 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  ManyToOne,
+  OneToMany,
+} from 'typeorm';
+
 import { Usuarios } from 'src/usuarios/entities/usuario.entity';
 import { DetalleVenta } from 'src/detalle-venta/entities/detalle-venta.entity';
 
@@ -14,7 +21,7 @@ export class Ventas {
   fecha_venta: Date;
 
   @Column()
-  total_venta: number;
+  total: number;
 
   @Column({
     type: 'enum',

@@ -8,8 +8,8 @@ export class DetalleVentaController {
   constructor(private readonly detalleVentaService: DetalleVentaService) {}
 
   @Post()
-  create(@Body() createDetalleVentaDto: CreateDetalleVentaDto) {
-    return this.detalleVentaService.create(createDetalleVentaDto);
+  create(@Body() dto: CreateDetalleVentaDto) {
+    return this.detalleVentaService.create(dto);
   }
 
   @Get()
@@ -23,8 +23,8 @@ export class DetalleVentaController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateDetalleVentaDto: UpdateDetalleVentaDto) {
-    return this.detalleVentaService.update(+id, updateDetalleVentaDto);
+  update(@Param('id') id: string, @Body() dto: UpdateDetalleVentaDto) {
+    return this.detalleVentaService.update(+id, dto);
   }
 
   @Delete(':id')

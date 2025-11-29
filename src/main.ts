@@ -16,6 +16,11 @@ async function bootstrap() {
     }),
   );
 
+  app.enableCors({
+  origin: 'http://localhost:5173',
+  credentials: true,
+  });
+
   // SWAGGER
   const config = new DocumentBuilder()
     .setTitle('API Productos')
@@ -34,6 +39,7 @@ async function bootstrap() {
 
   console.log('Aplicación corriendo en: http://localhost:' + port);
   console.log('Swagger UI:              http://localhost:' + port + '/docs');
+  console.log('CROOS: http://localhost:5173:');
 }
 
 bootstrap();

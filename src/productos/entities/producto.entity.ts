@@ -1,5 +1,13 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  ManyToOne,
+  OneToMany,
+} from 'typeorm';
+
 import { Categorias } from 'src/categorias/entities/categoria.entity';
+import { DetalleVenta } from 'src/detalle-venta/entities/detalle-venta.entity';
 
 @Entity()
 export class Productos {
@@ -20,4 +28,8 @@ export class Productos {
 
   @ManyToOne(() => Categorias, (categoria) => categoria.productos)
   categoria: Categorias;
+
+  // chatgpt me ayudo:D
+  @OneToMany(() => DetalleVenta, (detalle) => detalle.producto)
+  detalles: DetalleVenta[];
 }

@@ -10,6 +10,20 @@ export class AuthService {
     private readonly jwtService: JwtService,
   ) {}
 
+
+  async register(data: any) {
+  const { nombre, email, password, rol } = data;
+
+  const hashed = await bcrypt.hash(password, 10);
+
+  return await this.usuariosService.create({
+    nombre,
+    email,
+    password: hashed,
+    rol,
+  });
+}
+
   // Validar credenciales
   async validateUser(email: string, pass: string) {
     const user = await this.usuariosService.findByEmail(email);
