@@ -16,7 +16,4 @@ export class CreateProductoDto {
   @IsNumber()
   categoriaId: number;
 
-  @IsString()
-  @IsOptional()
-  imagen?: string;
 }

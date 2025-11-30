@@ -19,7 +19,6 @@ export class ProductosService {
     descripcion_producto: dto.descripcion_producto,
     precio: dto.precio,
     stock: dto.stock,
-    imagen: dto.imagen,
     categoria: { id_categoria: dto.categoriaId },
   });
 
