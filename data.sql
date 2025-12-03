@@ -25,357 +25,315 @@ http://localhost:3000/api/v1/auth/register
 
 
 --Pegar en SQL de xampp
-INSERT INTO categorias (nombre_categoria, descripcion_categoria) VALUES
-('Abarrotes', 'Productos básicos como arroz, fideos, legumbres, harina, azúcar y aceite'),
-('Bebidas', 'Bebidas gaseosas, jugos, aguas minerales y energéticas'),
-('Snacks', 'Papas fritas, ramitas, galletas, chocolates y confites'),
-('Lácteos', 'Leche, yogures, mantequilla, quesos y otros derivados'),
-('Carnes y Embutidos', 'Longanizas, salchichas, jamón, vienesas y carnes refrigeradas'),
-('Panadería', 'Pan, hallullas, marraquetas, queques y productos horneados'),
-('Artículos de Limpieza', 'Detergentes, cloro, esponjas, lavalozas y productos de aseo'),
-('Higiene Personal', 'Shampoo, desodorante, jabón, pasta dental, papel higiénico'),
-('Congelados', 'Helados, verduras congeladas, mariscos y productos listos'),
-('Mascotas', 'Comida para perros y gatos, snacks y arena sanitaria'),
-('Licores', 'Cervezas, vinos, piscos y otros alcoholes permitidos'),
-('Frutas y Verduras', 'Productos frescos de estación'),
-('Cigarros y Filtros', 'Cigarrillos, encendedores, fósforos'),
-('Farmacia Básica', 'Medicamentos sin receta, curitas y analgésicos');
+  INSERT INTO categorias (nombre_categoria, descripcion_categoria) VALUES
+  ('Abarrotes', 'Productos básicos como arroz, fideos, legumbres, harina, azúcar y aceite'),
+  ('Bebidas', 'Bebidas gaseosas, jugos, aguas minerales y energéticas'),
+  ('Snacks', 'Papas fritas, ramitas, galletas, chocolates y confites'),
+  ('Lácteos', 'Leche, yogures, mantequilla, quesos y otros derivados'),
+  ('Carnes y Embutidos', 'Longanizas, salchichas, jamón, vienesas y carnes refrigeradas'),
+  ('Panadería', 'Pan, hallullas, marraquetas, queques y productos horneados'),
+  ('Artículos de Limpieza', 'Detergentes, cloro, esponjas, lavalozas y productos de aseo'),
+  ('Higiene Personal', 'Shampoo, desodorante, jabón, pasta dental, papel higiénico'),
+  ('Congelados', 'Helados, verduras congeladas, mariscos y productos listos'),
+  ('Mascotas', 'Comida para perros y gatos, snacks y arena sanitaria'),
+  ('Licores', 'Cervezas, vinos, piscos y otros alcoholes permitidos'),
+  ('Frutas y Verduras', 'Productos frescos de estación'),
+  ('Cigarros y Filtros', 'Cigarrillos, encendedores, fósforos'),
+  ('Farmacia Básica', 'Medicamentos sin receta, curitas y analgésicos');
 
 
-INSERT INTO productos (nombre_producto, descripcion_producto, precio, stock, categoriaIdCategoria) VALUES
-('Arroz Grado 1 1kg', 
- 'Arroz de alta calidad, ideal para preparaciones diarias como guisos, acompañamientos y comidas familiares. Se cocina de manera pareja y mantiene una textura suave y esponjosa, convirtiéndose en un básico indispensable en cualquier hogar.', 
- 1200, 40, 1),
+  INSERT INTO productos (nombre_producto, descripcion_producto, precio, stock, categoriaIdCategoria) VALUES
+  ('Arroz Grado 1 1kg', 
+  'Arroz de alta calidad, ideal para preparaciones diarias como guisos, acompañamientos y comidas familiares. Se cocina de manera pareja y mantiene una textura suave y esponjosa, convirtiéndose en un básico indispensable en cualquier hogar.', 
+  1200, 40, 1),
 
-('Fideos Spaghetti 400g', 
- 'Spaghetti de trigo de cocción rápida, perfectos para comidas rápidas y económicas. Mantienen su forma y consistencia al cocinarse, siendo ideales para combinar con salsas, carnes, verduras o simplemente con mantequilla.', 
- 900, 50, 1),
+  ('Fideos Spaghetti 400g', 
+  'Spaghetti de trigo de cocción rápida, perfectos para comidas rápidas y económicas. Mantienen su forma y consistencia al cocinarse, siendo ideales para combinar con salsas, carnes, verduras o simplemente con mantequilla.', 
+  900, 50, 1),
 
-('Coca-Cola 1.5L', 
- 'Bebida gaseosa clásica de sabor cola, refrescante y reconocida mundialmente. Ideal para compartir en comidas familiares, celebraciones o simplemente para disfrutar en cualquier momento del día.', 
- 1800, 25, 2),
+  ('Coca-Cola 1.5L', 
+  'Bebida gaseosa clásica de sabor cola, refrescante y reconocida mundialmente. Ideal para compartir en comidas familiares, celebraciones o simplemente para disfrutar en cualquier momento del día.', 
+  1800, 25, 2),
 
-('Papas Fritas Lays 140g', 
- 'Papas fritas crujientes con un sabor irresistible, elaboradas con papas seleccionadas y fritas hasta obtener una textura perfecta. Son un snack ideal para compartir, ver una película o acompañar bebidas.', 
- 1500, 35, 3),
+  ('Papas Fritas Lays 140g', 
+  'Papas fritas crujientes con un sabor irresistible, elaboradas con papas seleccionadas y fritas hasta obtener una textura perfecta. Son un snack ideal para compartir, ver una película o acompañar bebidas.', 
+  1500, 35, 3),
 
-('Leche Entera 1L', 
- 'Leche líquida de sabor suave y textura cremosa, proveniente de vacas seleccionadas. Aporta calcio y vitaminas esenciales, siendo perfecta para el desayuno, preparaciones de cocina o el consumo diario.', 
- 1100, 30, 4),
+  ('Leche Entera 1L', 
+  'Leche líquida de sabor suave y textura cremosa, proveniente de vacas seleccionadas. Aporta calcio y vitaminas esenciales, siendo perfecta para el desayuno, preparaciones de cocina o el consumo diario.', 
+  1100, 30, 4),
 
-('Yoghurt Batido Frutilla 155g', 
- 'Yoghurt cremoso con sabor a frutilla, elaborado con leche fresca y cultivos vivos. Es una opción ideal como snack saludable, acompañamiento del desayuno o colación para niños y adultos.', 
- 650, 60, 4),
+  ('Yoghurt Batido Frutilla 155g', 
+  'Yoghurt cremoso con sabor a frutilla, elaborado con leche fresca y cultivos vivos. Es una opción ideal como snack saludable, acompañamiento del desayuno o colación para niños y adultos.', 
+  650, 60, 4),
 
-('Salchichas Vienesas Pack 12u', 
- 'Tradicionales salchichas tipo vienesa, listas para cocinar a la plancha, al agua o en microondas. Tienen un sabor suave y una textura firme, ideales para hot dogs, completos u otras preparaciones rápidas.', 
- 1700, 22, 5),
+  ('Salchichas Vienesas Pack 12u', 
+  'Tradicionales salchichas tipo vienesa, listas para cocinar a la plancha, al agua o en microondas. Tienen un sabor suave y una textura firme, ideales para hot dogs, completos u otras preparaciones rápidas.', 
+  1700, 22, 5),
 
-('Pan Hallulla Bolsa 10u', 
- 'Pan fresco de textura suave y miga compacta, perfecto para el desayuno o la once. Su versatilidad permite acompañarlo con dulce, mantequilla, quesos o embutidos, siendo uno de los panes preferidos del consumo diario.', 
- 1800, 15, 6),
+  ('Pan Hallulla Bolsa 10u', 
+  'Pan fresco de textura suave y miga compacta, perfecto para el desayuno o la once. Su versatilidad permite acompañarlo con dulce, mantequilla, quesos o embutidos, siendo uno de los panes preferidos del consumo diario.', 
+  1800, 15, 6),
 
-('Detergente Líquido 1L', 
- 'Detergente líquido concentrado que remueve manchas difíciles y deja un aroma agradable en la ropa. Rinde múltiples lavados y es compatible con lavadoras automáticas o lavado manual.', 
- 2200, 18, 7),
+  ('Detergente Líquido 1L', 
+  'Detergente líquido concentrado que remueve manchas difíciles y deja un aroma agradable en la ropa. Rinde múltiples lavados y es compatible con lavadoras automáticas o lavado manual.', 
+  2200, 18, 7),
 
-('Shampoo Familiar 750ml', 
- 'Shampoo de uso diario con fórmula suave que limpia profundamente el cabello y el cuero cabelludo. Deja una sensación fresca, un aroma agradable y un acabado sedoso, apto para toda la familia.', 
- 2500, 20, 8),
+  ('Shampoo Familiar 750ml', 
+  'Shampoo de uso diario con fórmula suave que limpia profundamente el cabello y el cuero cabelludo. Deja una sensación fresca, un aroma agradable y un acabado sedoso, apto para toda la familia.', 
+  2500, 20, 8),
 
-('Helado de Vainilla 1L', 
- 'Helado cremoso de vainilla elaborado con ingredientes de calidad. Ideal para postres, celebraciones o para disfrutar en días calurosos. Su textura suave y sabor clásico lo hacen un producto muy popular.', 
- 3200, 12, 9),
+  ('Helado de Vainilla 1L', 
+  'Helado cremoso de vainilla elaborado con ingredientes de calidad. Ideal para postres, celebraciones o para disfrutar en días calurosos. Su textura suave y sabor clásico lo hacen un producto muy popular.', 
+  3200, 12, 9),
 
-('Comida para Perro 1kg', 
- 'Alimento seco para perros adultos, formulado con nutrientes esenciales que contribuyen a la salud del pelaje, los dientes y la energía diaria. Su mezcla equilibrada lo convierte en una opción confiable para mascotas.', 
- 2500, 14, 10),
+  ('Comida para Perro 1kg', 
+  'Alimento seco para perros adultos, formulado con nutrientes esenciales que contribuyen a la salud del pelaje, los dientes y la energía diaria. Su mezcla equilibrada lo convierte en una opción confiable para mascotas.', 
+  2500, 14, 10),
 
-('Cerveza Cristal Lata 350ml', 
- 'Cerveza lager chilena de sabor suave, refrescante y fácil de beber. Ideal para compartir en reuniones, asados o simplemente para disfrutar bien fría después del trabajo.', 
- 1000, 48, 11),
+  ('Cerveza Cristal Lata 350ml', 
+  'Cerveza lager chilena de sabor suave, refrescante y fácil de beber. Ideal para compartir en reuniones, asados o simplemente para disfrutar bien fría después del trabajo.', 
+  1000, 48, 11),
 
-('Plátano 1kg', 
- 'Fruta fresca de primera calidad, rica en potasio y de sabor naturalmente dulce. Es perfecta para consumir sola, en batidos o como parte de un desayuno saludable. Producto siempre presente en los hogares chilenos.', 
- 1300, 20, 12),
+  ('Plátano 1kg', 
+  'Fruta fresca de primera calidad, rica en potasio y de sabor naturalmente dulce. Es perfecta para consumir sola, en batidos o como parte de un desayuno saludable. Producto siempre presente en los hogares chilenos.', 
+  1300, 20, 12),
 
-('Encendedor Bic', 
- 'Encendedor de alta duración, seguro y confiable, ideal para uso diario en el hogar. Fabricado con materiales resistentes y una llama estable, es uno de los productos más reconocidos del mercado.', 
- 700, 40, 13),
+  ('Encendedor Bic', 
+  'Encendedor de alta duración, seguro y confiable, ideal para uso diario en el hogar. Fabricado con materiales resistentes y una llama estable, es uno de los productos más reconocidos del mercado.', 
+  700, 40, 13),
 
-('Aceite de Girasol 1L',
- 'Aceite vegetal refinado ideal para freír, saltear y aderezar ensaladas. Sabor neutro y gran durabilidad.', 
- 2200, 35, 1),
+  ('Aceite de Girasol 1L',
+  'Aceite vegetal refinado ideal para freír, saltear y aderezar ensaladas. Sabor neutro y gran durabilidad.', 
+  2200, 35, 1),
 
-('Jugo de Naranja 1L',
- 'Jugo natural de naranja, sin preservantes, ideal para el desayuno o para refrescarse en cualquier momento del día.', 
- 1500, 40, 2),
-
-
-('Queso Mantecoso 200g',
- 'Queso semi-blando de sabor suave y cremoso, ideal para sándwiches, tablas o cocinar.', 
- 1800, 30, 4),
-
-('Jamón Cocido 250g',
- 'Jamón de cerdo cocido, bajo en grasa, ideal para sándwiches y comidas rápidas.', 
- 2200, 20, 5),
-
-('Pan Integral 500g',
- 'Pan integral rico en fibra, perfecto para desayunos saludables y sándwiches.', 
- 1500, 25, 6),
-
-('Detergente en Polvo 1kg',
- 'Detergente concentrado para ropa, potente contra manchas difíciles y con aroma fresco.', 
- 2000, 30, 7),
-
-('Pasta Dental 100ml',
- 'Pasta dental con flúor para prevenir caries y mantener dientes y encías saludables.', 
- 900, 50, 8),
-
-('Helado de Chocolate 1L',
- 'Helado cremoso con intenso sabor a chocolate, ideal para postres y reuniones familiares.', 
- 3200, 15, 9),
-
-('Arena Sanitaria para Gatos 5kg',
- 'Arena aglomerante y absorbente, mantiene el olor bajo control y fácil de limpiar.', 
- 4500, 20, 10),
-
-('Vino Tinto Cabernet Sauvignon 750ml',
- 'Vino tinto chileno con cuerpo, ideal para acompañar carnes y cenas especiales.', 
- 5500, 18, 11),
-
-('Manzana Roja 1kg',
- 'Fruta fresca, dulce y jugosa, perfecta para consumo directo o en preparaciones culinarias.', 
- 2000, 30, 12),
+  ('Jugo de Naranja 1L',
+  'Jugo natural de naranja, sin preservantes, ideal para el desayuno o para refrescarse en cualquier momento del día.', 
+  1500, 40, 2),
 
 
-('Paracetamol 500mg 10u',
- 'Medicamento analgésico y antipirético, útil para aliviar dolores leves y fiebre.', 
- 1200, 50, 14);
+  ('Queso Mantecoso 200g',
+  'Queso semi-blando de sabor suave y cremoso, ideal para sándwiches, tablas o cocinar.', 
+  1800, 30, 4),
+
+  ('Jamón Cocido 250g',
+  'Jamón de cerdo cocido, bajo en grasa, ideal para sándwiches y comidas rápidas.', 
+  2200, 20, 5),
+
+  ('Pan Integral 500g',
+  'Pan integral rico en fibra, perfecto para desayunos saludables y sándwiches.', 
+  1500, 25, 6),
+
+  ('Detergente en Polvo 1kg',
+  'Detergente concentrado para ropa, potente contra manchas difíciles y con aroma fresco.', 
+  2000, 30, 7),
+
+  ('Pasta Dental 100ml',
+  'Pasta dental con flúor para prevenir caries y mantener dientes y encías saludables.', 
+  900, 50, 8),
+
+  ('Helado de Chocolate 1L',
+  'Helado cremoso con intenso sabor a chocolate, ideal para postres y reuniones familiares.', 
+  3200, 15, 9),
+
+  ('Arena Sanitaria para Gatos 5kg',
+  'Arena aglomerante y absorbente, mantiene el olor bajo control y fácil de limpiar.', 
+  4500, 20, 10),
+
+  ('Vino Tinto Cabernet Sauvignon 750ml',
+  'Vino tinto chileno con cuerpo, ideal para acompañar carnes y cenas especiales.', 
+  5500, 18, 11),
+
+  ('Manzana Roja 1kg',
+  'Fruta fresca, dulce y jugosa, perfecta para consumo directo o en preparaciones culinarias.', 
+  2000, 30, 12),
 
 
-
+  ('Paracetamol 500mg 10u',
+  'Medicamento analgésico y antipirético, útil para aliviar dolores leves y fiebre.', 
+  1200, 50, 14);
 
 
 
 
+
+
+
+-- Insertar 25 ventas con fechas entre el 28/11/2025 y 12/12/2025, solo efectivo
 INSERT INTO ventas (fecha_venta, total, estado, metodo_pago, usuarioIdUsuario) VALUES
-('2025-11-30 10:00:00', 9996, 'pendiente', 'efectivo', 1),
-('2025-11-30 11:30:00', 13556, 'completada', 'efectivo', 2),
-('2025-11-30 12:15:00', 5712, 'cancelada', 'efectivo', 3),
-('2025-11-30 13:45:00', 18088, 'pendiente', 'efectivo', 4),
-('2025-11-30 14:20:00', 13090, 'completada', 'efectivo', 5),
-('2025-11-10 09:15:00', 7854, 'completada', 'efectivo', 1),
-('2025-11-11 14:30:00', 12614, 'completada', 'efectivo', 2),
-('2025-11-12 11:50:00', 11186, 'cancelada', 'efectivo', 3),
-('2025-11-13 16:20:00', 9996, 'completada', 'efectivo', 4),
-('2025-11-14 10:45:00', 13090, 'pendiente', 'efectivo', 5),
-('2025-11-15 13:15:00', 6700, 'completada', 'efectivo', 6),
-('2025-11-16 09:35:00', 11400, 'completada', 'efectivo', 7),
-('2025-11-17 17:00:00', 8500, 'completada', 'efectivo', 8),
-('2025-11-18 12:20:00', 9600, 'pendiente', 'efectivo', 1),
-('2025-11-19 15:40:00', 11000, 'completada', 'efectivo', 2),
-('2025-11-20 11:10:00', 7400, 'completada', 'efectivo', 3),
-('2025-11-21 14:50:00', 10200, 'completada', 'efectivo', 4),
-('2025-11-22 10:30:00', 5800, 'cancelada', 'efectivo', 5),
-('2025-11-23 13:05:00', 8600, 'completada', 'efectivo', 6),
-('2025-11-24 09:45:00', 9900, 'completada', 'efectivo', 7),
-('2025-11-25 16:15:00', 12300, 'completada', 'efectivo', 8),
-('2025-11-26 11:25:00', 4500, 'pendiente', 'efectivo', 1),
-('2025-11-27 14:55:00', 13500, 'completada', 'efectivo', 2),
-('2025-11-28 10:05:00', 10200, 'completada', 'efectivo', 3),
-('2025-11-29 13:35:00', 8900, 'completada', 'efectivo', 4),
-('2025-11-30 09:50:00', 15400, 'completada', 'efectivo', 5),
-('2025-11-30 11:20:00', 7600, 'completada', 'efectivo', 6),
-('2025-11-30 12:45:00', 8400, 'pendiente', 'efectivo', 7),
-('2025-11-30 14:10:00', 11100, 'completada', 'efectivo', 8),
-('2025-11-30 15:30:00', 9200, 'completada', 'efectivo', 1),
-('2025-11-30 16:50:00', 12800, 'completada', 'efectivo', 2),
-('2025-11-30 18:15:00', 8700, 'pendiente', 'efectivo', 3),
-('2025-11-30 19:40:00', 9700, 'completada', 'efectivo', 4),
-('2025-11-30 20:50:00', 10500, 'completada', 'efectivo', 5),
-('2025-11-30 21:30:00', 6300, 'completada', 'efectivo', 6),
-('2025-11-01 09:10:00', 7800, 'completada', 'efectivo', 1),
-('2025-11-02 11:30:00', 9200, 'pendiente', 'efectivo', 2),
-('2025-11-03 14:45:00', 5600, 'cancelada', 'efectivo', 3),
-('2025-11-04 10:20:00', 11400, 'completada', 'efectivo', 4),
-('2025-11-05 15:15:00', 13200, 'completada', 'efectivo', 5),
-('2025-11-06 09:50:00', 8700, 'pendiente', 'efectivo', 6),
-('2025-11-07 12:40:00', 10100, 'completada', 'efectivo', 7),
-('2025-11-08 16:30:00', 9400, 'completada', 'efectivo', 8),
-('2025-11-09 11:20:00', 7800, 'completada', 'efectivo', 1),
-('2025-11-10 13:50:00', 12500, 'completada', 'efectivo', 2),
-('2025-11-11 10:05:00', 6900, 'cancelada', 'efectivo', 3),
-('2025-11-12 14:15:00', 11800, 'completada', 'efectivo', 4),
-('2025-11-13 09:30:00', 9700, 'pendiente', 'efectivo', 5),
-('2025-11-14 12:55:00', 8800, 'completada', 'efectivo', 6),
-('2025-11-15 16:10:00', 10400, 'completada', 'efectivo', 7),
-('2025-11-16 11:40:00', 8900, 'completada', 'efectivo', 8),
-('2025-11-17 10:25:00', 9700, 'completada', 'efectivo', 1),
-('2025-11-18 13:15:00', 11200, 'pendiente', 'efectivo', 2),
-('2025-11-19 15:50:00', 8300, 'completada', 'efectivo', 3),
-('2025-11-20 09:05:00', 9500, 'completada', 'efectivo', 4),
-('2025-11-21 12:35:00', 10200, 'completada', 'efectivo', 5),
-('2025-11-22 14:20:00', 7600, 'cancelada', 'efectivo', 6),
-('2025-11-23 10:45:00', 11800, 'completada', 'efectivo', 7),
-('2025-11-24 13:10:00', 12300, 'completada', 'efectivo', 8),
-('2025-11-25 09:55:00', 8700, 'pendiente', 'efectivo', 1),
-('2025-11-26 12:25:00', 9800, 'completada', 'efectivo', 2),
-('2025-11-27 15:35:00', 9400, 'completada', 'efectivo', 3),
-('2025-11-28 11:15:00', 10100, 'completada', 'efectivo', 4),
-('2025-11-29 13:50:00', 8900, 'completada', 'efectivo', 5),
-('2025-11-30 09:20:00', 15400, 'completada', 'efectivo', 6),
-('2025-11-30 10:45:00', 7600, 'completada', 'efectivo', 7),
-('2025-11-30 12:10:00', 8400, 'pendiente', 'efectivo', 8),
-('2025-11-30 13:30:00', 11100, 'completada', 'efectivo', 1),
-('2025-11-30 14:50:00', 9200, 'completada', 'efectivo', 2),
-('2025-11-30 16:10:00', 12800, 'completada', 'efectivo', 3),
-('2025-11-30 17:35:00', 8700, 'pendiente', 'efectivo', 4),
-('2025-11-30 18:50:00', 9700, 'completada', 'efectivo', 5),
-('2025-11-30 20:10:00', 10500, 'completada', 'efectivo', 6),
-('2025-11-30 21:25:00', 6300, 'completada', 'efectivo', 7),
-('2025-11-30 22:40:00', 11200, 'completada', 'efectivo', 8),
-('2025-11-05 09:20:00', 8700, 'completada', 'efectivo', 1),
-('2025-11-06 11:40:00', 9900, 'completada', 'efectivo', 2),
-('2025-11-07 13:55:00', 11200, 'completada', 'efectivo', 3),
-('2025-11-08 10:10:00', 10300, 'pendiente', 'efectivo', 4),
-('2025-11-09 12:30:00', 9500, 'completada', 'efectivo', 5),
-('2025-11-10 14:50:00', 10700, 'completada', 'efectivo', 6),
-('2025-11-11 09:25:00', 8600, 'completada', 'efectivo', 7),
-('2025-11-12 11:45:00', 12100, 'completada', 'efectivo', 8),
-('2025-11-13 13:15:00', 9300, 'pendiente', 'efectivo', 1),
-('2025-12-01 10:15:00', 12400, 'completada', 'efectivo', 1),
-('2025-12-01 11:40:00', 9800, 'pendiente', 'efectivo', 2),
-('2025-12-01 12:30:00', 14200, 'completada', 'efectivo', 3),
-('2025-12-02 09:50:00', 11500, 'cancelada', 'efectivo', 4),
-('2025-12-02 14:20:00', 13400, 'completada', 'efectivo', 5),
-('2025-12-03 10:10:00', 9100, 'pendiente', 'efectivo', 6),
-('2025-12-03 13:35:00', 12800, 'completada', 'efectivo', 7),
-('2025-12-04 11:00:00', 15700, 'completada', 'efectivo', 8),
-('2025-12-04 15:25:00', 8600, 'pendiente', 'efectivo', 1),
-('2025-12-05 09:30:00', 9900, 'completada', 'efectivo', 2),
-('2025-12-05 12:50:00', 12100, 'completada', 'efectivo', 3),
-('2025-12-06 10:15:00', 10700, 'cancelada', 'efectivo', 4),
-('2025-12-06 14:40:00', 13500, 'completada', 'efectivo', 5),
-('2025-12-07 09:20:00', 9400, 'pendiente', 'efectivo', 6),
-('2025-12-07 13:10:00', 11800, 'completada', 'efectivo', 7),
-('2025-12-07 16:30:00', 13200, 'completada', 'efectivo', 8);
+-- Noviembre 2025
+('2025-11-28 09:15:00', 0, 'completada', 'efectivo', 3),
+('2025-11-28 14:30:00', 0, 'completada', 'efectivo', 4),
+('2025-11-29 11:45:00', 0, 'completada', 'efectivo', 5),
+('2025-11-29 16:20:00', 0, 'completada', 'efectivo', 6),
+('2025-11-30 18:10:00', 0, 'completada', 'efectivo', 7),
+('2025-11-30 20:05:00', 0, 'completada', 'efectivo', 8),
 
+-- Diciembre 2025
+('2025-12-01 10:15:00', 0, 'completada', 'efectivo', 1),
+('2025-12-01 12:30:00', 0, 'completada', 'efectivo', 2),
+('2025-12-02 15:45:00', 0, 'completada', 'efectivo', 3),
+('2025-12-02 17:20:00', 0, 'completada', 'efectivo', 4),
+('2025-12-03 19:30:00', 0, 'completada', 'efectivo', 5),
+('2025-12-04 08:45:00', 0, 'completada', 'efectivo', 6),
+('2025-12-04 13:15:00', 0, 'completada', 'efectivo', 7),
+('2025-12-05 16:40:00', 0, 'completada', 'efectivo', 8),
+('2025-12-05 18:25:00', 0, 'pendiente', 'efectivo', 1),
+('2025-12-06 11:10:00', 0, 'completada', 'efectivo', 2),
+('2025-12-06 14:50:00', 0, 'completada', 'efectivo', 3),
+('2025-12-07 10:30:00', 0, 'completada', 'efectivo', 4),
+('2025-12-08 12:45:00', 0, 'completada', 'efectivo', 5),
+('2025-12-09 15:20:00', 0, 'pendiente', 'efectivo', 6),
+('2025-12-10 17:35:00', 0, 'completada', 'efectivo', 7),
+('2025-12-10 19:15:00', 0, 'completada', 'efectivo', 8),
+('2025-12-11 09:40:00', 0, 'completada', 'efectivo', 1),
+('2025-12-11 13:25:00', 0, 'completada', 'efectivo', 2),
+('2025-12-12 16:10:00', 0, 'completada', 'efectivo', 3);
 
+-- Insertar detalle_venta para todas las ventas
+  INSERT INTO detalle_venta (cantidad, subtotal, ventaIdVenta, productoIdProducto) VALUES
+  -- Venta 1 (28/11 - Mañana)
+  (2, 0, 1, 1),   -- Arroz 2kg
+  (1, 0, 1, 3),   -- Coca-Cola 1.5L
+  (1, 0, 1, 5),   -- Leche 1L
+  (1, 0, 1, 8),   -- Pan Hallulla
 
+  -- Venta 2 (28/11 - Tarde)
+  (3, 0, 2, 4),   -- Papas Fritas 3 bolsas
+  (2, 0, 2, 13),  -- Cerveza 2 latas
+  (1, 0, 2, 15),  -- Encendedor
 
+  -- Venta 3 (29/11 - Mañana)
+  (1, 0, 3, 6),   -- Yoghurt
+  (2, 0, 3, 8),   -- Pan Hallulla 2 bolsas
+  (1, 0, 3, 14),  -- Plátano 1kg
+  (1, 0, 3, 27),  -- Paracetamol
 
-INSERT INTO detalle_venta (cantidad, subtotal, ventaIdVenta, productoIdProducto) VALUES
-(2, 2400, 1, 1), (1, 1800, 1, 3),
-(3, 2700, 2, 2), (2, 3000, 2, 4),
-(1, 1100, 3, 5), (2, 1300, 3, 6),
-(4, 4400, 4, 7), (2, 3200, 4, 8),
-(3, 3300, 5, 9), (1, 2200, 5, 10),
-(2, 1500, 6, 11), (3, 1800, 6, 12),
-(1, 2200, 7, 13), (2, 3100, 7, 14),
-(3, 2700, 8, 15), (1, 2000, 8, 16),
-(2, 1800, 9, 17), (3, 2400, 9, 18),
-(1, 2200, 10, 19), (2, 3300, 10, 20),
-(3, 2900, 11, 21), (1, 1600, 11, 22),
-(2, 2500, 12, 23), (3, 3100, 12, 24),
-(1, 1800, 13, 25), (2, 2700, 13, 26),
-(3, 3200, 14, 27), (1, 2400, 14, 1),
-(2, 2200, 15, 2), (3, 2600, 15, 3),
-(1, 3000, 16, 4), (2, 1500, 16, 5),
-(3, 2900, 17, 6), (1, 3100, 17, 7),
-(2, 2700, 18, 8), (3, 3200, 18, 9),
-(1, 1800, 19, 10), (2, 2200, 19, 11),
-(3, 2400, 20, 12), (1, 2500, 20, 13),
-(2, 3100, 21, 14), (3, 3300, 21, 15),
-(1, 2000, 22, 16), (2, 1800, 22, 17),
-(3, 2700, 23, 18), (1, 2200, 23, 19),
-(2, 3000, 24, 20), (3, 3100, 24, 21),
-(1, 2600, 25, 22), (2, 2800, 25, 23),
-(3, 3200, 26, 24), (1, 2400, 26, 25),
-(2, 2700, 27, 26), (3, 3300, 27, 27),
-(1, 2200, 28, 1), (2, 2500, 28, 2),
-(3, 3100, 29, 3), (1, 3000, 29, 4),
-(2, 2800, 30, 5), (3, 2900, 30, 6),
-(2, 2400, 1, 1), (1, 1800, 1, 3),
-(3, 2700, 2, 2), (2, 3000, 2, 4),
-(1, 1100, 3, 5), (2, 1300, 3, 6),
-(4, 4400, 4, 7), (2, 3200, 4, 8),
-(3, 3300, 5, 9), (1, 2200, 5, 10),
-(2, 1500, 6, 11), (3, 1800, 6, 12),
-(1, 2200, 7, 13), (2, 3100, 7, 14),
-(3, 2700, 8, 15), (1, 2000, 8, 16),
-(2, 1800, 9, 17), (3, 2400, 9, 18),
-(1, 2200, 10, 19), (2, 3300, 10, 20),
-(3, 2900, 11, 21), (1, 1600, 11, 22),
-(2, 2500, 12, 23), (3, 3100, 12, 24),
-(1, 1800, 13, 25), (2, 2700, 13, 26),
-(3, 3200, 14, 27), (1, 2400, 14, 1),
-(2, 2200, 15, 2), (3, 2600, 15, 3),
-(1, 3000, 16, 4), (2, 1500, 16, 5),
-(3, 2900, 17, 6), (1, 3100, 17, 7),
-(2, 2700, 18, 8), (3, 3200, 18, 9),
-(1, 1800, 19, 10), (2, 2200, 19, 11),
-(3, 2400, 20, 12), (1, 2500, 20, 13),
-(2, 3100, 21, 14), (3, 3300, 21, 15),
-(1, 2000, 22, 16), (2, 1800, 22, 17),
-(3, 2700, 23, 18), (1, 2200, 23, 19),
-(2, 3000, 24, 20), (3, 3100, 24, 21),
-(1, 2600, 25, 22), (2, 2800, 25, 23),
-(3, 3200, 26, 24), (1, 2400, 26, 25),
-(2, 2700, 27, 26), (3, 3300, 27, 27),
-(1, 2200, 28, 1), (2, 2500, 28, 2),
-(3, 3100, 29, 3), (1, 3000, 29, 4),
-(2, 2800, 30, 5), (3, 2900, 30, 6),
-(1, 2000, 31, 7), (2, 2200, 31, 8),
-(3, 2400, 32, 9), (1, 2600, 32, 10),
-(2, 2800, 33, 11), (3, 3000, 33, 12),
-(1, 3200, 34, 13), (2, 3400, 34, 14),
-(3, 3600, 35, 15), (1, 3800, 35, 16),
-(2, 4000, 36, 17), (3, 4200, 36, 18),
-(1, 4400, 37, 19), (2, 4600, 37, 20),
-(3, 4800, 38, 21), (1, 5000, 38, 22),
-(2, 5200, 39, 23), (3, 5400, 39, 24),
-(1, 5600, 40, 25), (2, 5800, 40, 26),
-(3, 6000, 41, 27), (1, 6200, 41, 1),
-(2, 6400, 42, 2), (3, 6600, 42, 3),
-(1, 6800, 43, 4), (2, 7000, 43, 5),
-(3, 7200, 44, 6), (1, 7400, 44, 7),
-(2, 7600, 45, 8), (3, 7800, 45, 9),
-(1, 8000, 46, 10), (2, 8200, 46, 11),
-(3, 8400, 47, 12), (1, 8600, 47, 13),
-(2, 8800, 48, 14), (3, 9000, 48, 15),
-(1, 9200, 49, 16), (2, 9400, 49, 17),
-(3, 9600, 50, 18), (1, 9800, 50, 19),
-(2, 2400, 51, 1), (1, 1800, 51, 3),
-(3, 2700, 52, 2), (2, 3000, 52, 4),
-(1, 1100, 53, 5), (2, 1300, 53, 6),
-(4, 4400, 54, 7), (2, 3200, 54, 8),
-(3, 3300, 55, 9), (1, 2200, 55, 10),
-(2, 1500, 56, 11), (3, 1800, 56, 12),
-(1, 2200, 57, 13), (2, 3100, 57, 14),
-(3, 2700, 58, 15), (1, 2000, 58, 16),
-(2, 1800, 59, 17), (3, 2400, 59, 18),
-(1, 2200, 60, 19), (2, 3300, 60, 20),
-(3, 2900, 61, 21), (1, 1600, 61, 22),
-(2, 2500, 62, 23), (3, 3100, 62, 24),
-(1, 1800, 63, 25), (2, 2700, 63, 26),
-(3, 3200, 64, 27), (1, 2400, 64, 1),
-(2, 2200, 65, 2), (3, 2600, 65, 3),
-(1, 3000, 66, 4), (2, 1500, 66, 5),
-(3, 2900, 67, 6), (1, 3100, 67, 7),
-(2, 2700, 68, 8), (3, 3200, 68, 9);
+  -- Venta 4 (29/11 - Tarde)
+  (1, 0, 4, 7),   -- Salchichas
+  (1, 0, 4, 11),  -- Helado Vainilla
+  (2, 0, 4, 13),  -- Cerveza 2 latas
 
+  -- Venta 5 (30/11 - Noche)
+  (1, 0, 5, 9),   -- Detergente Líquido
+  (1, 0, 5, 10),  -- Shampoo
+  (1, 0, 5, 12),  -- Comida Perro
+  (1, 0, 5, 25),  -- Vino Tinto
 
+  -- Venta 6 (30/11 - Noche)
+  (3, 0, 6, 13),  -- Cerveza 3 latas
+  (2, 0, 6, 4),   -- Papas Fritas 2 bolsas
+  (1, 0, 6, 26),  -- Manzana Roja
 
+  -- Venta 7 (01/12 - Mañana)
+  (1, 0, 7, 1),   -- Arroz
+  (1, 0, 7, 2),   -- Fideos
+  (1, 0, 7, 5),   -- Leche
+  (1, 0, 7, 16),  -- Aceite
 
+  -- Venta 8 (01/12 - Mediodía)
+  (2, 0, 8, 3),   -- Coca-Cola 2 botellas
+  (1, 0, 8, 17),  -- Jugo Naranja
+  (1, 0, 8, 18),  -- Queso Mantecoso
 
--- Script para corregir totales con 19% IVA
+  -- Venta 9 (02/12 - Tarde)
+  (1, 0, 9, 19),  -- Jamón Cocido
+  (1, 0, 9, 20),  -- Pan Integral
+  (2, 0, 9, 22),  -- Pasta Dental 2 unidades
+
+  -- Venta 10 (02/12 - Tarde)
+  (1, 0, 10, 11),  -- Helado Vainilla
+  (1, 0, 10, 23),  -- Helado Chocolate
+  (1, 0, 10, 24),  -- Arena Gatos
+
+  -- Venta 11 (03/12 - Noche)
+  (4, 0, 11, 13),  -- Cerveza 4 latas
+  (2, 0, 11, 4),   -- Papas Fritas 2 bolsas
+  (1, 0, 11, 14),  -- Plátano
+
+  -- Venta 12 (04/12 - Mañana)
+  (2, 0, 12, 6),   -- Yoghurt 2 unidades
+  (1, 0, 12, 8),   -- Pan Hallulla
+  (1, 0, 12, 27),  -- Paracetamol
+
+  -- Venta 13 (04/12 - Mediodía)
+  (1, 0, 13, 9),   -- Detergente Líquido
+  (1, 0, 13, 10),  -- Shampoo
+  (1, 0, 13, 21),  -- Detergente Polvo
+
+  -- Venta 14 (05/12 - Tarde)
+  (3, 0, 14, 13),  -- Cerveza 3 latas
+  (1, 0, 14, 25),  -- Vino Tinto
+  (1, 0, 14, 26),  -- Manzana Roja
+
+  -- Venta 15 (05/12 - Noche - Pendiente)
+  (1, 0, 15, 1),   -- Arroz
+  (1, 0, 15, 5),   -- Leche
+  (1, 0, 15, 14),  -- Plátano
+
+  -- Venta 16 (06/12 - Mañana)
+  (2, 0, 16, 2),   -- Fideos 2 packs
+  (1, 0, 16, 3),   -- Coca-Cola
+  (1, 0, 16, 7),   -- Salchichas
+
+  -- Venta 17 (06/12 - Tarde)
+  (1, 0, 17, 11),  -- Helado Vainilla
+  (1, 0, 17, 12),  -- Comida Perro
+  (1, 0, 17, 24),  -- Arena Gatos
+
+  -- Venta 18 (07/12 - Mañana)
+  (1, 0, 18, 16),  -- Aceite
+  (1, 0, 18, 17),  -- Jugo Naranja
+  (1, 0, 18, 18),  -- Queso
+  (1, 0, 18, 19),  -- Jamón
+
+  -- Venta 19 (08/12 - Mediodía)
+  (2, 0, 19, 13),  -- Cerveza 2 latas
+  (1, 0, 19, 20),  -- Pan Integral
+  (1, 0, 19, 22),  -- Pasta Dental
+
+  -- Venta 20 (09/12 - Tarde - Pendiente)
+  (1, 0, 20, 23),  -- Helado Chocolate
+  (2, 0, 20, 27),  -- Paracetamol 2 cajas
+
+  -- Venta 21 (10/12 - Tarde)
+  (1, 0, 21, 9),   -- Detergente Líquido
+  (1, 0, 21, 10),  -- Shampoo
+  (1, 0, 21, 21),  -- Detergente Polvo
+  (1, 0, 21, 22),  -- Pasta Dental
+
+  -- Venta 22 (10/12 - Noche)
+  (3, 0, 22, 13),  -- Cerveza 3 latas
+  (1, 0, 22, 4),   -- Papas Fritas
+  (1, 0, 22, 15),  -- Encendedor
+
+  -- Venta 23 (11/12 - Mañana)
+  (1, 0, 23, 1),   -- Arroz
+  (1, 0, 23, 6),   -- Yoghurt
+  (1, 0, 23, 8),   -- Pan Hallulla
+  (1, 0, 23, 14),  -- Plátano
+
+  -- Venta 24 (11/12 - Mediodía)
+  (1, 0, 24, 11),  -- Helado Vainilla
+  (1, 0, 24, 23),  -- Helado Chocolate
+  (1, 0, 24, 25),  -- Vino Tinto
+
+  -- Venta 25 (12/12 - Tarde)
+  (2, 0, 25, 13),  -- Cerveza 2 latas
+  (1, 0, 25, 26),  -- Manzana Roja
+  (1, 0, 25, 27),  -- Paracetamol
+  (1, 0, 25, 5);   -- Leche
+
+-- Ahora actualizamos los subtotales en detalle_venta (precio * cantidad)
+UPDATE detalle_venta dv
+JOIN productos p ON dv.productoIdProducto = p.id_producto
+SET dv.subtotal = dv.cantidad * p.precio;
+
+-- Finalmente actualizamos los totales en ventas (suma de subtotales * 1.19)
 UPDATE ventas v
 JOIN (
     SELECT ventaIdVenta, SUM(subtotal) AS suma_subtotales
     FROM detalle_venta
     GROUP BY ventaIdVenta
-) dv ON v.id_venta = dv.ventaIdVenta
-SET v.total = ROUND(dv.suma_subtotales * 1.19);
-
-
+) dv_sum ON v.id_venta = dv_sum.ventaIdVenta
+SET v.total = ROUND(dv_sum.suma_subtotales * 1.19);
