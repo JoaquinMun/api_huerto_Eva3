@@ -25,21 +25,21 @@ http://localhost:3000/api/v1/auth/register
 
 
 --Pegar en SQL de xampp
-  INSERT INTO categorias (nombre_categoria, descripcion_categoria) VALUES
-  ('Abarrotes', 'Productos básicos como arroz, fideos, legumbres, harina, azúcar y aceite'),
-  ('Bebidas', 'Bebidas gaseosas, jugos, aguas minerales y energéticas'),
-  ('Snacks', 'Papas fritas, ramitas, galletas, chocolates y confites'),
-  ('Lácteos', 'Leche, yogures, mantequilla, quesos y otros derivados'),
-  ('Carnes y Embutidos', 'Longanizas, salchichas, jamón, vienesas y carnes refrigeradas'),
-  ('Panadería', 'Pan, hallullas, marraquetas, queques y productos horneados'),
-  ('Artículos de Limpieza', 'Detergentes, cloro, esponjas, lavalozas y productos de aseo'),
-  ('Higiene Personal', 'Shampoo, desodorante, jabón, pasta dental, papel higiénico'),
-  ('Congelados', 'Helados, verduras congeladas, mariscos y productos listos'),
-  ('Mascotas', 'Comida para perros y gatos, snacks y arena sanitaria'),
-  ('Licores', 'Cervezas, vinos, piscos y otros alcoholes permitidos'),
-  ('Frutas y Verduras', 'Productos frescos de estación'),
-  ('Cigarros y Filtros', 'Cigarrillos, encendedores, fósforos'),
-  ('Farmacia Básica', 'Medicamentos sin receta, curitas y analgésicos');
+    INSERT INTO categorias (nombre_categoria, descripcion_categoria) VALUES
+    ('Abarrotes', 'Productos básicos como arroz, fideos, legumbres, harina, azúcar y aceite'),
+    ('Bebidas', 'Bebidas gaseosas, jugos, aguas minerales y energéticas'),
+    ('Snacks', 'Papas fritas, ramitas, galletas, chocolates y confites'),
+    ('Lácteos', 'Leche, yogures, mantequilla, quesos y otros derivados'),
+    ('Carnes y Embutidos', 'Longanizas, salchichas, jamón, vienesas y carnes refrigeradas'),
+    ('Panadería', 'Pan, hallullas, marraquetas, queques y productos horneados'),
+    ('Artículos de Limpieza', 'Detergentes, cloro, esponjas, lavalozas y productos de aseo'),
+    ('Higiene Personal', 'Shampoo, desodorante, jabón, pasta dental, papel higiénico'),
+    ('Congelados', 'Helados, verduras congeladas, mariscos y productos listos'),
+    ('Mascotas', 'Comida para perros y gatos, snacks y arena sanitaria'),
+    ('Licores', 'Cervezas, vinos, piscos y otros alcoholes permitidos'),
+    ('Frutas y Verduras', 'Productos frescos de estación'),
+    ('Cigarros y Filtros', 'Cigarrillos, encendedores, fósforos'),
+    ('Farmacia Básica', 'Medicamentos sin receta, curitas y analgésicos');
 
 
   INSERT INTO productos (nombre_producto, descripcion_producto, precio, stock, categoriaIdCategoria) VALUES
